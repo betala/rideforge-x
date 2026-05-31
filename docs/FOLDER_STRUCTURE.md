@@ -1,0 +1,122 @@
+# RideForge X Folder Structure
+
+```text
+RideForge X/
+  README.md
+  docs/
+    ARCHITECTURE.md
+    API_CONTRACTS.md
+    FOLDER_STRUCTURE.md
+  apps/
+    mobile/
+      pubspec.yaml
+      README.md
+      lib/
+        main.dart
+        app/
+          app.dart
+          router.dart
+        core/
+          constants/
+            api_paths.dart
+          network/
+            api_client.dart
+          services/
+            firebase_media_upload_service.dart
+            mapbox_route_service.dart
+          storage/
+            offline_store.dart
+          theme/
+            app_theme.dart
+        features/
+          garage/
+            data/
+              models/
+                motorcycle.dart
+              repositories/
+                motorcycle_repository.dart
+          service_history/
+            data/
+              models/
+                service_record.dart
+              repositories/
+                service_record_repository.dart
+          maintenance/
+            data/
+              models/
+                maintenance_task.dart
+              repositories/
+                maintenance_repository.dart
+          accessories/
+            data/
+              models/
+                accessory.dart
+              repositories/
+                accessory_repository.dart
+          touring/
+            data/
+              models/
+                tour_plan.dart
+              repositories/
+                tour_plan_repository.dart
+          group_rides/
+            data/
+              models/
+                group_ride.dart
+              repositories/
+                group_ride_repository.dart
+          diagnostics/
+            data/
+              models/
+                diagnostic_report.dart
+              repositories/
+                diagnostics_repository.dart
+          media/
+            data/
+              models/
+                media_item.dart
+              repositories/
+                media_repository.dart
+    api/
+      package.json
+      .env.example
+      migrations/
+        001_initial_schema.sql
+      src/
+        app.js
+        server.js
+        config/
+          env.js
+        db/
+          pool.js
+        middleware/
+          errorHandler.js
+          injectUser.js
+        services/
+          aiDiagnosticsService.js
+          firebaseStorageService.js
+          mapboxService.js
+        utils/
+          asyncHandler.js
+          httpError.js
+        modules/
+          garage/
+          service-history/
+          maintenance/
+          accessories/
+          touring/
+          group-rides/
+          diagnostics/
+          media/
+```
+
+Each backend module follows:
+
+```text
+feature.model.js
+feature.repository.js
+feature.service.js
+feature.controller.js
+feature.routes.js
+```
+
